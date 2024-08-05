@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb Tenses Quiz</title>
+    <style>
+        body{font-family:Arial,sans-serif;margin:0;padding:20px;background-color:#f4f4f4}.container{max-width:800px;margin:auto;background:white;padding:20px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1)}h1{text-align:center}.question{margin-bottom:20px}.question p{margin:0;padding:0}.options{list-style-type:none;padding:0}.options li{margin-bottom:10px}button{display:block;width:100%;padding:10px;background:#007BFF;color:white;border:none;border-radius:5px;cursor:pointer;font-size:16px}button:hover{background:#0056b3}.result{margin-top:20px;padding:10px;background-color:#e6e6e6;border-radius:5px}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Verb Tenses Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. By the time she finished debugging, she _______ (resolve) all merge conflicts.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q1" value="had resolved"> had resolved</li>
+                    <li><input type="radio" name="q1" value="resolved"> resolved</li>
+                    <li><input type="radio" name="q1" value="has resolved"> has resolved</li>
+                    <li><input type="radio" name="q1" value="will resolve"> will resolve</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>2. Before the review, they _______ (finish) writing the documentation.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q2" value="had finished"> had finished</li>
+                    <li><input type="radio" name="q2" value="finished"> finished</li>
+                    <li><input type="radio" name="q2" value="have finished"> have finished</li>
+                    <li><input type="radio" name="q2" value="will finish"> will finish</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>3. She _______ (test) the new feature for hours before it was deployed.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q3" value="had been testing"> had been testing</li>
+                    <li><input type="radio" name="q3" value="was testing"> was testing</li>
+                    <li><input type="radio" name="q3" value="has been testing"> has been testing</li>
+                    <li><input type="radio" name="q3" value="will be testing"> will be testing</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>4. When we started the code review, they _______ (submit) their pull requests.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q4" value="had submitted"> had submitted</li>
+                    <li><input type="radio" name="q4" value="submitted"> submitted</li>
+                    <li><input type="radio" name="q4" value="have submitted"> have submitted</li>
+                    <li><input type="radio" name="q4" value="will submit"> will submit</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>5. After the deployment, they _______ (continue) to monitor the application's performance.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q5" value="had continued"> had continued</li>
+                    <li><input type="radio" name="q5" value="continued"> continued</li>
+                    <li><input type="radio" name="q5" value="have continued"> have continued</li>
+                    <li><input type="radio" name="q5" value="will continue"> will continue</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>6. Transform the sentence to negative: "She had implemented the feature before the deadline."</p>
+                <ul class="options">
+                    <li><input type="text" name="q6"></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>7. By next week, they _______ (complete) the task.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q7" value="will have completed"> will have completed</li>
+                    <li><input type="radio" name="q7" value="completed"> completed</li>
+                    <li><input type="radio" name="q7" value="have completed"> have completed</li>
+                    <li><input type="radio" name="q7" value="will complete"> will complete</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>8. Fill in the blank: "She _______ (not finish) her homework yet."</p>
+                <ul class="options">
+                    <li><input type="text" name="q8"></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>9. They _______ (work) on the project for three hours before they took a break.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q9" value="had been working"> had been working</li>
+                    <li><input type="radio" name="q9" value="were working"> were working</li>
+                    <li><input type="radio" name="q9" value="have been working"> have been working</li>
+                    <li><input type="radio" name="q9" value="will be working"> will be working</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>10. Translate the sentence: "Eles já tinham saído quando eu cheguei."</p>
+                <ul class="options">
+                    <li><input type="text" name="q10"></li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>11. By the time he started the application, he _______ (configure) the server correctly.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q11" value="had configured"> had configured</li>
+                    <li><input type="radio" name="q11" value="configured"> configured</li>
+                    <li><input type="radio" name="q11" value="has configured"> has configured</li>
+                    <li><input type="radio" name="q11" value="will configure"> will configure</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>12. Match the sentences to the correct verb forms:</p>
+                <ul class="options">
+                    <li>
+                        <select name="q12a">
+                            <option value="">Select</option>
+                            <option value="had been working">had been working</option>
+                            <option value="have been working">have been working</option>
+                            <option value="were working">were working</option>
+                        </select>
+                        a) They _______ (work) on the project for three hours before they took a break.
+                    </li>
+                    <li>
+                        <select name="q12b">
+                            <option value="">Select</option>
+                            <option value="had been working">had been working</option>
+                            <option value="have been working">have been working</option>
+                            <option value="were working">were working</option>
+                        </select>
+                        b) She _______ (work) on the project for three hours yesterday.
+                    </li>
+                    <li>
+                        <select name="q12c">
+                            <option value="">Select</option>
+                            <option value="had been working">had been working</option>
+                            <option value="have been working">have been working</option>
+                            <option value="were working">were working</option>
+                        </select>
+                        c) By the time we started, they _______ (work) for three hours.
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>13. Match the sentences to the correct verb forms:</p>
+                <ul class="options">
+                    <li>
+                        <select name="q13a">
+                            <option value="">Select</option>
+                            <option value="had submitted">had submitted</option>
+                            <option value="submitted">submitted</option>
+                            <option value="have submitted">have submitted</option>
+                        </select>
+                        a) They _______ (submit) their pull requests before the review.
+                    </li>
+                    <li>
+                        <select name="q13b">
+                            <option value="">Select</option>
+                            <option value="had submitted">had submitted</option>
+                            <option value="submitted">submitted</option>
+                            <option value="have submitted">have submitted</option>
+                        </select>
+                        b) She _______ (submit) her pull requests before the review.
+                    </li>
+                    <li>
+                        <select name="q13c">
+                            <option value="">Select</option>
+                            <option value="had submitted">had submitted</option>
+                            <option value="submitted">submitted</option>
+                            <option value="have submitted">have submitted</option>
+                        </select>
+                        c) After the review, they _______ (submit) their pull requests.
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>14. Before she started the job, she _______ (use) Kotlin for a full year.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q14" value="had used"> had used</li>
+                    <li><input type="radio" name="q14" value="used"> used</li>
+                    <li><input type="radio" name="q14" value="has used"> has used</li>
+                    <li><input type="radio" name="q14" value="was using"> was using</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>15. By the time the server crashed, he _______ (save) the latest changes.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q15" value="had saved"> had saved</li>
+                    <li><input type="radio" name="q15" value="saved"> saved</li>
+                    <li><input type="radio" name="q15" value="has saved"> has saved</li>
+                    <li><input type="radio" name="q15" value="was saving"> was saving</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>16. Fill in the blank: "By the time the meeting ended, she _______ (take) all the necessary notes."</p>
+                <ul class="options">
+                    <li><input type="radio" name="q16" value="had taken"> had taken</li>
+                    <li><input type="radio" name="q16" value="took"> took</li>
+                    <li><input type="radio" name="q16" value="has taken"> has taken</li>
+                    <li><input type="radio" name="q16" value="was taking"> was taking</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>17. Before the project started, they _______ (create) a detailed plan.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q17" value="had created"> had created</li>
+                    <li><input type="radio" name="q17" value="created"> created</li>
+                    <li><input type="radio" name="q17" value="have created"> have created</li>
+                    <li><input type="radio" name="q17" value="were creating"> were creating</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>18. Fill in the blank: "By the time I arrived, they _______ (leave) the office."</p>
+                <ul class="options">
+                    <li><input type="radio" name="q18" value="had left"> had left</li>
+                    <li><input type="radio" name="q18" value="left"> left</li>
+                    <li><input type="radio" name="q18" value="have left"> have left</li>
+                    <li><input type="radio" name="q18" value="were leaving"> were leaving</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>19. Match the sentences to the correct verb forms:</p>
+                <ul class="options">
+                    <li>
+                        <select name="q19a">
+                            <option value="">Select</option>
+                            <option value="had been coding">had been coding</option>
+                            <option value="have been coding">have been coding</option>
+                            <option value="were coding">were coding</option>
+                        </select>
+                        a) They _______ (code) for hours before the deadline.
+                    </li>
+                    <li>
+                        <select name="q19b">
+                            <option value="">Select</option>
+                            <option value="had been coding">had been coding</option>
+                            <option value="have been coding">have been coding</option>
+                            <option value="were coding">were coding</option>
+                        </select>
+                        b) She _______ (code) all night yesterday.
+                    </li>
+                    <li>
+                        <select name="q19c">
+                            <option value="">Select</option>
+                            <option value="had been coding">had been coding</option>
+                            <option value="have been coding">have been coding</option>
+                            <option value="were coding">were coding</option>
+                        </select>
+                        c) By the time we checked, they _______ (code) for hours.
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>20. Before they launched the app, they _______ (test) it thoroughly.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q20" value="had tested"> had tested</li>
+                    <li><input type="radio" name="q20" value="tested"> tested</li>
+                    <li><input type="radio" name="q20" value="have tested"> have tested</li>
+                    <li><input type="radio" name="q20" value="were testing"> were testing</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>21. Fill in the blank: "By the time the manager arrived, they _______ (finish) the report."</p>
+                <ul class="options">
+                    <li><input type="radio" name="q21" value="had finished"> had finished</li>
+                    <li><input type="radio" name="q21" value="finished"> finished</li>
+                    <li><input type="radio" name="q21" value="have finished"> have finished</li>
+                    <li><input type="radio" name="q21" value="were finishing"> were finishing</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>22. After the meeting, she _______ (realize) that she had forgotten to bring the notes.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q22" value="realized"> realized</li>
+                    <li><input type="radio" name="q22" value="had realized"> had realized</li>
+                    <li><input type="radio" name="q22" value="has realized"> has realized</li>
+                    <li><input type="radio" name="q22" value="was realizing"> was realizing</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>23. Match the sentences to the correct verb forms:</p>
+                <ul class="options">
+                    <li>
+                        <select name="q23a">
+                            <option value="">Select</option>
+                            <option value="had been discussing">had been discussing</option>
+                            <option value="have been discussing">have been discussing</option>
+                            <option value="were discussing">were discussing</option>
+                        </select>
+                        a) They _______ (discuss) the project for hours before the boss arrived.
+                    </li>
+                    <li>
+                        <select name="q23b">
+                            <option value="">Select</option>
+                            <option value="had been discussing">had been discussing</option>
+                            <option value="have been discussing">have been discussing</option>
+                            <option value="were discussing">were discussing</option>
+                        </select>
+                        b) She _______ (discuss) the project all night yesterday.
+                    </li>
+                    <li>
+                        <select name="q23c">
+                            <option value="">Select</option>
+                            <option value="had been discussing">had been discussing</option>
+                            <option value="have been discussing">have been discussing</option>
+                            <option value="were discussing">were discussing</option>
+                        </select>
+                        c) By the time we joined, they _______ (discuss) the project for hours.
+                    </li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>24. By the time the meeting started, she _______ (prepare) all the necessary documents.</p>
+                <ul class="options">
+                    <li><input type="radio" name="q24" value="had prepared"> had prepared</li>
+                    <li><input type="radio" name="q24" value="prepared"> prepared</li>
+                    <li><input type="radio"
+                        <div class="question">
+                            <p>21. Fill in the blank: "By the time the manager arrived, they _______ (finish) the report."</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q21" value="had finished"> had finished</li>
+                                <li><input type="radio" name="q21" value="finished"> finished</li>
+                                <li><input type="radio" name="q21" value="have finished"> have finished</li>
+                                <li><input type="radio" name="q21" value="were finishing"> were finishing</li>
+                            </ul>
+                        </div>
+                        <div class="question">
+                            <p>22. After the meeting, she _______ (realize) that she had forgotten to bring the notes.</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q22" value="realized"> realized</li>
+                                <li><input type="radio" name="q22" value="had realized"> had realized</li>
+                                <li><input type="radio" name="q22" value="has realized"> has realized</li>
+                                <li><input type="radio" name="q22" value="was realizing"> was realizing</li>
+                            </ul>
+                        </div>
+                        <div class="question">
+                            <p>23. Match the sentences to the correct verb forms:</p>
+                            <ul class="options">
+                                <li>
+                                    <select name="q23a">
+                                        <option value="">Select</option>
+                                        <option value="had been discussing">had been discussing</option>
+                                        <option value="have been discussing">have been discussing</option>
+                                        <option value="were discussing">were discussing</option>
+                                    </select>
+                                    a) They _______ (discuss) the project for hours before the boss arrived.
+                                </li>
+                                <li>
+                                    <select name="q23b">
+                                        <option value="">Select</option>
+                                        <option value="had been discussing">had been discussing</option>
+                                        <option value="have been discussing">have been discussing</option>
+                                        <option value="were discussing">were discussing</option>
+                                    </select>
+                                    b) She _______ (discuss) the project all night yesterday.
+                                </li>
+                                <li>
+                                    <select name="q23c">
+                                        <option value="">Select</option>
+                                        <option value="had been discussing">had been discussing</option>
+                                        <option value="have been discussing">have been discussing</option>
+                                        <option value="were discussing">were discussing</option>
+                                    </select>
+                                    c) By the time we joined, they _______ (discuss) the project for hours.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="question">
+                            <p>24. By the time the meeting started, she _______ (prepare) all the necessary documents.</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q24" value="had prepared"> had prepared</li>
+                                <li><input type="radio" name="q24" value="prepared"> prepared</li>
+                                <li><input type="radio" name="q24" value="have prepared"> have prepared</li>
+                                <li><input type="radio" name="q24" value="was preparing"> was preparing</li>
+                            </ul>
+                        </div>
+                        <div class="question">
+                            <p>25. Fill in the blank: "By the time the client called, they _______ (complete) the presentation."</p>
+                            <ul class="options">
+                                <li><input type="radio" name="q25" value="had completed"> had completed</li>
+                                <li><input type="radio" name="q25" value="completed"> completed</li>
+                                <li><input type="radio" name="q25" value="have completed"> have completed</li>
+                                <li><input type="radio" name="q25" value="were completing"> were completing</li>
+                            </ul>
+                        </div>
+                        <button type="submit">Submit Quiz</button>
+                    </form>
+                    <div id="result" class="result" style="display:none;">
+                        <h2>Result</h2>
+                        <p id="score"></p>
+                        <p id="corrections"></p>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById("quizForm").onsubmit=function(e){e.preventDefault();const n={q1:"had resolved",q2:"had finished",q3:"had been testing",q4:"had submitted",q5:"continued",q6:"She hadn't implemented the feature before the deadline.",q7:"will have completed",q8:"has not finished",q9:"had been working",q10:"They had already left when I arrived.",q11:"had configured",q12a:"had been working",q12b:"were working",q12c:"had been working",q13a:"had submitted",q13b:"had submitted",q13c:"submitted",q14:"had used",q15:"had saved",q16:"had taken",q17:"had created",q18:"had left",q19a:"had been coding",q19b:"were coding",q19c:"had been coding",q20:"had tested",q21:"had finished",q22:"realized",q23a:"had been discussing",q23b:"were discussing",q23c:"had been discussing",q24:"had prepared",q25:"had completed"};let t=0,d="",a=new FormData(e.target);for(const[e,o]of a.entries())o.toLowerCase()===n[e].toLowerCase()?t++:d+=`<p>Question ${e.replace("q","")} is incorrect. Correct answer: ${n[e]}</p>`;document.getElementById("score").innerHTML=`You scored ${t} out of 25`,document.getElementById("corrections").innerHTML=d,document.getElementById("result").style.display="block"};
+                </script>
+            </body>
+            </html>
+            
